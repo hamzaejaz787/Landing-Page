@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  color: rgb(12, 12, 44);
+  font-family: "Mulish", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  padding: 2em 3em;
+}
+
+.nav-lists li {
+  font-size: 1rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-lists li:hover {
+  opacity: 0.4;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.intro {
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+.intro p {
+  font-size: 1.35rem;
+  padding: 1em 0;
+  width: 80%;
+}
+img {
+  max-width: 100%;
+}
+
+.intro-img {
+  font-size: 0;
+}
+
+.cta-btn {
+  border: none;
+  background-color: #3c9ccc;
+  color: #f0f8fa;
+  font-size: 0.9rem;
+  padding: 1em 2em;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: rgb(34, 130, 179);
+}
+.cta-btn:active {
+  background-color: rgb(30, 119, 163);
+}
+
+/* CONTACT */
+.contact {
+  background-color: #0c0c2c;
+  color: #fff;
+  padding: 5em;
+  text-align: center;
+}
+.contact-title {
+  margin: auto;
+  width: 50%;
+  font-size: 2.75rem;
+}
+
+.contact-description {
+  padding: 1.25em 0em;
+  font-size: 1rem;
+  line-height: 1.55em;
+  width: 35%;
+  margin: auto;
+}
+
+.sign-up-container {
+  margin: 1em 0;
+}
+
+.sign-up-container input {
+  width: 25%;
+  padding: 0.8em;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.sign-up-container input::placeholder {
+  color: rgba(25, 25, 63, 0.8);
+}
+
+.contact span {
+  color: rgba(240, 248, 250, 0.5);
+}
+
+@media (max-width: 800px) {
+  .nav-lists {
+    width: 50%;
+  }
+  img {
+    display: none;
+  }
+  .main {
+    margin-top: 0;
+  }
+  .intro {
+    text-align: center;
+    margin: 1em auto;
+    padding: 0 0.75em;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .intro p {
+    margin: auto;
+    font-size: 0.9rem;
+  }
+  .contact {
+    padding: 5em 2em;
+  }
+  .contact-title {
+    width: 60%;
+    font-size: 2rem;
+  }
+  .contact-description {
+    font-size: 0.9rem;
+    width: 50%;
+  }
+  .sign-up-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sign-up-container input {
+    width: 50%;
+  }
+  .email-btn {
+    width: 50%;
+    margin-top: 0.75em;
+  }
+  .contact span {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 450px) {
+  nav {
+    justify-content: center;
+  }
+  .nav-lists {
+    width: 100%;
+  }
+  .sign-up-container input {
+    width: 90%;
+  }
+  .email-btn {
+    width: 90%;
+  }
+  .contact-title {
+    width: 90%;
+  }
+  .contact-description {
+    width: 90%;
+  }
+}
