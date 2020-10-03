@@ -55,10 +55,7 @@ h2 {
 }
 img {
   max-width: 100%;
-}
-
-.intro-img {
-  font-size: 0;
+  display: block;
 }
 
 .cta-btn {
